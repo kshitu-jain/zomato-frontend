@@ -13,7 +13,7 @@ const Search = (props) => {
     mealType: id,
     sort: 1,
   });
-
+  let [, _filter] = useState([]);
   let [restaurants, setRestaurants] = useState([]);
 
   // mealType, loc_id, lCost, hCost, sort, cuisine, page, itemsPerPage
@@ -26,7 +26,7 @@ const Search = (props) => {
 
   let setFilterPage = (event) => {
     let { name, value } = event.target;
-    console.log(name, value);
+    console.log(value);
 
     switch (name) {
       case "sort":
@@ -35,8 +35,9 @@ const Search = (props) => {
 
       case "cost":
         let array = value.split("-");
-        console.log(array);
+        // console.log(array);
         setfilterData({ ...filterData, lCost: array[0], hCost: array[1] });
+
         break;
 
       case "location":
@@ -49,13 +50,9 @@ const Search = (props) => {
         break;
 
       case "cuisine":
-        let cuisineFilter = filterData.cuisine
-          ? filterData.cuisine.map((value) => {
-              return value.name;
-            })
-          : null;
-
-        console.log({ ...filterData, cuisineFilter: value });
+        let cuisine = [2];
+        _filter["cuisine"] = cuisine;
+        setfilterData({ ...filterData, ..._filter });
         break;
     }
   };
@@ -112,7 +109,7 @@ const Search = (props) => {
                 type="checkbox"
                 className="checkbox"
                 name="cuisine"
-                value="north-Indian"
+                value="1"
                 onChange={setFilterPage}
               />
               <label className="text-color2">North Indian</label>
@@ -122,7 +119,7 @@ const Search = (props) => {
                 type="checkbox"
                 className="checkbox"
                 name="cuisine"
-                value="south-Indian"
+                value="2"
                 onChange={setFilterPage}
               />
               <label className="text-color2">South Indian</label>
@@ -132,7 +129,7 @@ const Search = (props) => {
                 type="checkbox"
                 className="checkbox"
                 name="cuisine"
-                value="chinese"
+                value="Chinese"
                 onChange={setFilterPage}
               />
               <label className="text-color2">Chinese</label>
@@ -142,7 +139,7 @@ const Search = (props) => {
                 type="checkbox"
                 className="checkbox"
                 name="cuisine"
-                value="fast-food"
+                value="4"
                 onChange={setFilterPage}
               />
               <label className="text-color2">Fast Food </label>
