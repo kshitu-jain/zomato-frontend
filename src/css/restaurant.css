@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+}
+
+.header {
+  background-color: rgb(206, 5, 5);
+}
+
+.e-logo {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  padding-left: 18px;
+  padding-top: 10px;
+}
+
+.food-image {
+  background-size: 100%;
+  height: 500px;
+  width: 100%;
+}
+
+.resto-heading {
+  color: rgb(25, 47, 96);
+}
+.click-button {
+  background-color: rgba(255, 255, 255, 0.676);
+  border: 0px;
+  color: rgb(25, 47, 96);
+  font-weight: bold;
+}
+.button-color {
+  background-color: rgb(206, 5, 5);
+}
+.list {
+  color: rgb(25, 47, 96);
+  text-decoration: none;
+}
+
+.list:visited {
+  color: red;
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+/* mouse over link */
+.list:hover {
+  color: red;
+}
+.cuisine {
+  color: rgb(25, 47, 96);
+}
+.address {
+  font-size: 18px;
+}
+.hand {
+  border: 1px black solid;
+
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.modal-image {
+  height: 120px;
+  width: 120px;
+}
+
+.menu-food-item {
+  position: relative;
+}
+
+.add-button {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  height: 45px;
+  width: 60%;
+}
+
+.count-button {
+  position: absolute;
+  bottom: 20px;
+}
+.carousel-body {
+  height: 400px;
+  width: 70vw;
+  right: 300px;
+  bottom: 20px;
+}
+/* .image-height {
+  height: 100%;
+  width: 100%;
+} */

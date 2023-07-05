@@ -1,0 +1,83 @@
+@font-face {
+  font-family: poppins;
+  src: url("./Poppins/Poppins-Regular.ttf");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0%;
+}
+
+body {
+  font-family: poppins;
+}
+
+.zom-main-section {
+  background-color: aliceblue;
+  height: 450px;
+  background-image: linear-gradient(transparent, #280202e9), url("./food\ image.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.edu-brand {
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+}
+
+.zom-searchpage {
+  width: 900px;
+}
+.text-size {
+  font-size: 15px;
+}
+.zom-locationsearch {
+  height: 50px;
+  width: 140%;
+  font-size: 12px;
+}
+.zom-restaurantsearch {
+  height: 50px;
+  width: 150%;
+  font-size: 12px;
+  /* padding-left: 100px; */
+}
+.zom-inputwithicon input[type="text"] {
+  padding-left: 65px;
+}
+.zom-inputwithicon {
+  position: relative;
+}
+.zom-inputwithicon i {
+  position: absolute;
+  left: 15px;
+  top: 7px;
+  padding: 9px;
+  right: 1px;
+  /* padding-right: 30px; */
+  margin: 0;
+}
+
+.edu-quicksearch {
+  color: #192f60;
+}
+.edu-searchicon {
+  color: black;
+  padding-left: 10px;
+  padding: 0px;
+}
+.edu-food {
+  box-shadow: 2px 2px 5px 0 #00000029;
+}
+.edu-foodimg {
+  height: 180px;
+  width: 180px;
+}
+.edu-foodinfo {
+  width: 210px;
+}
+.edu-breakfast {
+  color: #192f60;
+}
